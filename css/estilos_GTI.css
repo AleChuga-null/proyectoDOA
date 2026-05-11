@@ -1,0 +1,116 @@
+
+/* TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #36558F;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #36558F;
+    font-size: 27px;
+    font-weight: 600; /* semibold */
+}
+
+h3 {
+    font-family: 'Merriweather', sans-serif;
+    color: #3B5560;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none; /* quita los puntos */
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    line-height: 23px; /* espaciado entre lineas */
+    font-size: 17px;
+}
+
+.btn-principal {
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+    font-family: 'Noto sans', sans-serif;
+    background-color: #820052;
+    color: #fff;
+    /*font-weight: bold;*/
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+    font-family: 'Noto sans', sans-serif;
+    border: 2px solid #820052;
+    background-color: white;
+    color: #820052;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cabecera {
+    width: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    img {
+        width: 100px;
+        height: 50px;
+       margin-left: 35px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        gap: 10px;
+        padding: 20px;
+
+        li {
+            width: 160px;
+            text-align: center;
+
+            color: #A494BF;
+
+            font-family: 'Noto sans', sans-serif;
+            font-size: 14px;
+        }
+    }
+
+}
+
+#logo-DOA {
+    width: 100px;
+    height: 95px;
+}
+
+/* PÁGINA PRINCIPAL */
+
