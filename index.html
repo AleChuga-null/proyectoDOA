@@ -6,7 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GTI</title>
+
     <link rel="stylesheet" href="css/estilos_GTI.css">
+    <script defer src="js/botonesNosotros.js"></script>
+
 </head>
 <body>
 <header id="cabecera">
@@ -22,12 +25,15 @@
     <a href="GTI/loginGTI.php"><img src="images/" alt="icono login"></a>
 </header>
 
+<!-- SECCIÓN INICIO -->
 <section id="sección-inicio">
     <h1>La Matriz de la Innovación Conectada</h1>
     <h3>Construyendo el futuro de las aplicaciones integradas, comenzando por la revolución educativa con DOA.</h3>
     <a href="#sección-productos" class="btn-principal">VER PRODUCTOS</a>
 </section>
+<!-- FIN SECCIÓN INICIO -->
 
+<!-- SECCIÓN PRODUCTOS -->
 <section id="sección-productos">
     <h1>Nuestros productos</h1>
     <div id="contenedor-productos">
@@ -48,6 +54,83 @@
 
     </div>
 </section>
+<!-- FIN SECCIÓN PRODUCTOS -->
+
+<!-- SECCIÓN NOSOTROS -->
+<section id="sección-nosotros">
+    <h2 id="encabezado-principal">¿Quiénes Somos?</h2>
+
+    <!-- Contenedor botones -->
+    <div class="contenedor_botones">
+        <button id="btn-misión" class="tab-btn active" onclick="mostrarContenido('mision')">Misión</button>
+        <button id="btn-visión" class="tab-btn" onclick="mostrarContenido('vision')">Visión</button>
+        <button id="btn-valores" class="tab-btn" onclick="mostrarContenido('valores')">Valores</button>
+    </div>
+
+    <!-- Bloque misión -->
+    <div id="bloque-mision" class="contenido-flex">
+        <div class="texto-columna">
+            <h3>Propósito Central</h3>
+            <div>
+                <p>Nuestra misión es actuar como el motor central que impulsa el desarrollo de soluciones digitales...</p>
+                <p>GTI no solo crea aplicaciones: construye una matriz tecnológica...</p>
+            </div>
+        </div>
+        <div class="imagen-columna">
+            <img src="images/equipo_desarrollo.png" alt="Misión GTI">
+        </div>
+    </div>
+
+    <!-- Bloque visión -->
+    <div id="bloque-vision" class="contenido-flex" style="display: none;">
+        <div class="texto-columna">
+            <h3>Horizonte GTI</h3>
+            <div>
+                <p>Convertirnos en el ecosistema tecnológico líder a nivel global...</p>
+                <p>Aspiramos a un futuro donde la tecnología de GTI sea un puente invisible.</p>
+            </div>
+        </div>
+        <div class="imagen-columna">
+            <img src="images/vision_futuro.png" alt="Visión GTI">
+        </div>
+    </div>
+
+    <!-- Bloque valores -->
+    <div id="bloque-valores" class="contenido-flex" style="display: none;">
+        <div class="contenedor-valores">
+            <div class="valores">
+                <img src="images/icono-cerebro">
+                <h3>Innovación</h3>
+                <div>
+                    <p>
+                        La tecnología debe servir a la persona, no al revés. Buscamos soluciones creativas y humanas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="valores">
+                <img src="images/icono-conexión">
+                <h3>Conexión</h3>
+                <div>
+                    <p>
+                        Creemos en la fuerza de un sistema donde todo se comunica de forma transparente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="valores">
+                <img src="images/icono-conexión">
+                <h3>Integración</h3>
+                <div>
+                    <p>
+                        Construimos software confiable, abierto y ético para proteger el futuro de nuestros usuarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FIN SECCIÓN NOSOTROS -->
 
 </body>
 </html>
