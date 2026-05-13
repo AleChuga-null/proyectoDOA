@@ -46,10 +46,21 @@ p {
     font-size: 17px;
 }
 
+label {
+    font-family: 'Poppins', sans-serif;
+    color: #3B5560;
+    font-size: 12px;
+}
+
 .btn-principal {
-    display: inline-block;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+
     width: 210px;
+    height: 45px;
+
     font-family: 'Noto sans', sans-serif;
     background-color: #820052;
     color: #fff;
@@ -60,13 +71,19 @@ p {
 }
 
 .btn {
-    display: inline-block;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+
     width: 210px;
+    height: 45px;
+
     font-family: 'Noto sans', sans-serif;
     border: 2px solid #820052;
     background-color: white;
     color: #820052;
+
     padding: 20px;
     border-radius: 10px;
 }
@@ -79,6 +96,10 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+
+    position: fixed;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
 
     img {
         width: 100px;
@@ -112,5 +133,103 @@ p {
     height: 95px;
 }
 
-/* PÁGINA PRINCIPAL */
 
+section {
+    height: 100dvh;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- SECCIÓN INICIO -- */
+#sección-inicio {
+    row-gap: 70px;
+
+    h1 {
+        width: 520px;
+        text-align: center;
+    }
+
+    h3 {
+        width: 565px;
+        text-align: center;
+    }
+}
+/* -- FIN SECCIÓN INICIO -- */
+
+
+/* -- SECCIÓN PRODUCTOS -- */
+#sección-productos{
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+    #contenedor-productos{
+        display: flex;
+        width: 1000px;
+        height: 530px;
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+    }
+
+    .contenedores_DOA {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #mockup-DOA {
+            width: 430px;
+            height: 320px;
+            img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+
+        h2{
+            padding: 50px 0;
+        }
+
+        p{
+            width: 450px;
+            padding-bottom: 50px;
+            padding-top: 0;
+            margin-bottom: 70px;
+        }
+
+        #contenedor-botones {
+            display: flex;
+            width: inherit;
+            justify-content: center;
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 20px;
+        }
+
+        label {
+            padding-top: 5px;
+            width: 200px;
+            margin-left: 235px;
+        }
+    }
+}
+/* -- FIN SECCIÓN PRODUCTOS -- */
+
+
+/* -- SECCIÓN NOSOTROS -- */
+
+
+/* -- FIN SECCIÓN NOSOTROS -- */
+
+
+/* -- SECCIÓN CONTACTO -- */
+
+/* -- FIN SECCIÓN CONTACTO -- */
