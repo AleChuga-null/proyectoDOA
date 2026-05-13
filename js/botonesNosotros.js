@@ -16,6 +16,9 @@ function mostrarContenido(seccion) {
         btn.classList.remove('active');
     });
 
+    document.getElementById('btn-' + seccion).classList.add('active');
+
+
     // cambio del título h2
     const h2 = document.getElementById('encabezado-principal');
 
