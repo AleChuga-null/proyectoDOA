@@ -226,6 +226,47 @@ section {
 
 /* -- SECCIÓN NOSOTROS -- */
 
+#sección-nosotros {
+
+    .contenedor_botones {
+
+        .tab-btn.active {
+            font-family: Lato, serif;
+            font-size: 16px;
+            font-weight: 600;
+
+            width: 140px;
+            height: 40px;
+
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgb(214, 136, 161);
+
+            background-color: #CC2E7D;
+            color: white;
+        }
+
+        .tab-btn {
+            font-family: Lato, serif;
+            font-size: 16px;
+            font-weight: 600;
+
+            width: 140px;
+            height: 40px;
+
+            border-radius: 50px;
+
+            background-color: white;
+            border: 2px solid #CC2E7D;
+            color: #CC2E7D;
+
+            transition: all 0.3s ease; /* Hace que los cambios de color sean suaves */
+        }
+
+        .tab-btn:hover {
+            transform: scale(1.05);
+        }
+    }
+}
 
 /* -- FIN SECCIÓN NOSOTROS -- */
 
