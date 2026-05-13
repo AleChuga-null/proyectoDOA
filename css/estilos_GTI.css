@@ -228,7 +228,21 @@ section {
 
 #sección-nosotros {
 
+    #encabezado-principal {
+        align-self: flex-start;
+        padding-left: 60px;
+    }
+
     .contenedor_botones {
+
+        align-self: flex-start;
+        padding-left: 60px;
+
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+        display: flex;
+        gap: 15px;
 
         .tab-btn.active {
             font-family: Lato, serif;
@@ -266,6 +280,87 @@ section {
             transform: scale(1.05);
         }
     }
+
+    .contenido-flex {
+
+        h3 {
+            padding-bottom: 50px;
+        }
+
+        p {
+            padding-bottom: 50px;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+        gap: 40px;
+
+        .texto-columna {
+            max-width: 50%;
+            margin-left: 60px;
+        }
+
+        .imagen-columna {
+            max-height: 350px;
+            width: auto;
+            display: flex;
+            justify-content: flex-end;
+
+            #img-mision {
+                max-width: 100%;
+                height: auto;
+            }
+
+            #img-vision {
+                max-width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+
+    .contenedor-valores {
+
+        padding-top: 47px;
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        gap: 30px;
+
+
+        .valores {
+
+            width: 400px;
+            height: 300px;
+            background-color: #FFF4F9;
+            border: 2px solid #C7C2C2;
+            border-radius: 30px;
+
+            h3 {
+                padding-top: 19px;
+                padding-bottom: 34px;
+                margin-left: 33px;
+            }
+
+            p {
+                margin-left: 33px;
+                width: 333px;
+            }
+
+            img {
+                margin-left: 33px;
+                margin-top: 22px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
 }
 
 /* -- FIN SECCIÓN NOSOTROS -- */

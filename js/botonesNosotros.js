@@ -8,7 +8,7 @@ function mostrarContenido(seccion) {
         bloque.style.display = 'none';
     });
 
-    // mostrar solo el que se ha pulsado
+    // mostrar solo el bloque del botón pulsado
     document.getElementById('bloque-' + seccion).style.display = 'flex';
 
     // quitar 'active' y ponerlo al pulsado
@@ -32,6 +32,6 @@ function mostrarContenido(seccion) {
         break;
 
     case 'valores':
-        h2.innerText = "";
+        h2.innerText = "Lo que nos define";
     }
 }
