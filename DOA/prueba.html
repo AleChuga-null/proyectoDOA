@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba DOA</title>
+
+    <link rel="stylesheet" href="../css/estilos_DOA.css">
+
 </head>
 <body>
-$END$
+
+<!-- CABECERA -->
+<header id="cabecera">
+    <div id="logo-doa"><img src="../images/logoDOA.svg" alt="Logo DOA"></div>
+    <div id="info-logo">
+        <span id="nombre-plataforma">Plataforma DOA</span>
+        <span id="slogan">Educación digital inteligente</span>
+    </div>
+    <nav id="nav-cabecera">
+        <a href="../index.html" id="btn-volver">
+            <img src="../images/icono-volver.svg" alt="Volver">
+            Volver a GTI
+        </a>
+        <a href="#" id="btn-adquirir">
+            <img src="../images/icono-adquirir.svg" alt="Adquirir">
+            Adquirir DOA
+        </a>
+    </nav>
+</header>
+<!-- FIN CABECERA -->
+
+
+<!-- SECCIÓN INICIO -->
+<section id="seccion-inicio">
+
+    <div id="texto-inicio">
+        <p id="subtitulo-inicio">Plataforma educativa</p>
+        <h1>Bienvenido a<br>la prueba de <span id="doa-color">DOA</span></h1>
+        <p id="descripcion-inicio">
+            DOA es una plataforma de educación digital diseñada para facilitar
+            el aprendizaje, la evaluación y la gestión académica en tiempo real.
+        </p>
+
+        <div id="lista-caracteristicas">
+
+            <div class="caracteristica">
+                <div class="icono-caracteristica">
+                    <img src="../images/icono-usuario.svg" alt="Explorar por rol">
+                </div>
+                <div>
+                    <p class="titulo-caracteristica">Explora por rol</p>
+                    <p class="texto-caracteristica">Accede a herramientas y funciones según tu perfil.</p>
+                </div>
+            </div>
+
+            <div class="caracteristica">
+                <div class="icono-caracteristica">
+                    <img src="../images/icono-evaluacion.svg" alt="Evaluación real">
+                </div>
+                <div>
+                    <p class="titulo-caracteristica">Evaluación real</p>
+                    <p class="texto-caracteristica">Conoce el Panel de Control y su información actualizada.</p>
+                </div>
+            </div>
+
+            <div class="caracteristica">
+                <div class="icono-caracteristica">
+                    <img src="../images/icono-seguridad.svg" alt="Entorno seguro">
+                </div>
+                <div>
+                    <p class="titulo-caracteristica">Entorno seguro</p>
+                    <p class="texto-caracteristica">Plataforma confiable, estable y protegida para tu experiencia.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="imagen-hero">
+        <img src="../images/imagen-hero.png" alt="Ilustración plataforma DOA">
+    </div>
+
+</section>
+<hr>
+<!-- FIN SECCIÓN INICIO -->
+
+
+<!-- SECCIÓN ROLES -->
+<section id="seccion-roles">
+
+    <h2>¿Qué rol deseas explorar?</h2>
+    <p id="subtitulo-roles">Elige tu perfil para acceder a las funcionalidades disponibles en la plataforma.</p>
+
+    <div id="contenedor-roles">
+
+        <!-- Alumno -->
+        <div class="tarjeta-rol">
+            <div class="icono-rol icono-inactivo">
+                <img src="../images/icono-alumno.svg" alt="Alumno">
+            </div>
+            <h3 class="nombre-rol">Alumno</h3>
+            <p class="descripcion-rol">Accede a tus cursos, actividades y recursos de aprendizaje.</p>
+            <a class="btn-rol btn-no-disponible">Actualmente no disponible</a>
+            <p class="nota-rol">
+                <img src="../images/icono-info.svg" alt="Info">
+                Próximamente más funcionalidades disponibles para ti.
+            </p>
+        </div>
+
+        <!-- Secretaría (disponible) -->
+        <div class="tarjeta-rol tarjeta-activa">
+            <div class="icono-rol icono-activo">
+                <img src="../images/icono-calendario.svg" alt="Secretaría">
+            </div>
+            <h3 class="nombre-rol">Secretaría</h3>
+            <p class="descripcion-rol">Gestiona, consulta y da seguimiento a la información institucional y matrículas.</p>
+            <a href="app/dashboard_secretaria.html" class="btn-rol btn-disponible" id="btn-secretaria">
+                Acceder como Secretaría
+                <img src="../images/icono-flecha.svg" alt="">
+            </a>
+            <p class="nota-rol nota-ok">
+                <img src="../images/icono-ok.svg" alt="OK">
+                Acceso autorizado y datos actualizados en tiempo real.
+            </p>
+        </div>
+
+        <!-- Docente -->
+        <div class="tarjeta-rol">
+            <div class="icono-rol icono-inactivo">
+                <img src="../images/icono-docente.svg" alt="Docente">
+            </div>
+            <h3 class="nombre-rol">Docente</h3>
+            <p class="descripcion-rol">Administra tus clases, estudiantes y evaluaciones fácilmente.</p>
+            <a class="btn-rol btn-no-disponible">Actualmente no disponible</a>
+            <p class="nota-rol">
+                <img src="../images/icono-info.svg" alt="Info">
+                Próximamente más herramientas disponibles para ti.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- FIN SECCIÓN ROLES -->
+
+
+<!-- PIE DE PÁGINA -->
+<footer id="pie-pagina">
+    <div id="contenedor-pie">
+
+        <div class="item-pie">
+            <div class="icono-pie">
+                <img src="../images/icono-candado.svg" alt="Seguridad">
+            </div>
+            <div>
+                <p class="titulo-pie">Seguridad y privacidad</p>
+                <p class="texto-pie">Tus datos están protegidos bajo los más altos estándares de seguridad.</p>
+            </div>
+        </div>
+
+        <div class="item-pie">
+            <div class="icono-pie">
+                <img src="../images/icono-ayuda.svg" alt="Ayuda">
+            </div>
+            <div>
+                <p class="titulo-pie">¿Necesitas ayuda?</p>
+                <p class="texto-pie">Consulta nuestras guías o contacta al soporte técnico.</p>
+            </div>
+        </div>
+
+        <div class="item-pie">
+            <div class="icono-pie">
+                <img src="../images/icono-estrella.svg" alt="Evolución">
+            </div>
+            <div>
+                <p class="titulo-pie">Plataforma en evolución</p>
+                <p class="texto-pie">DOA está en constante mejora para ofrecerte la mejor experiencia.</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- FIN PIE DE PÁGINA -->
+
 </body>
 </html>

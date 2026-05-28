@@ -1,37 +1,11 @@
-
-
-// función de cambio
+// -- Cambio sección Nosotros --
 function mostrarContenido(seccion) {
-    // buscar y ocultar bloques
-    const bloques = document.querySelectorAll('.contenido-flex');
-    bloques.forEach(bloque => {
-        bloque.style.display = 'none';
-    });
+    document.getElementById('bloque-mision').style.display = 'none';
+    document.getElementById('bloque-vision').style.display = 'none';
+    document.getElementById('bloque-valores').style.display = 'none';
 
-    // mostrar solo el bloque del botón pulsado
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
     document.getElementById('bloque-' + seccion).style.display = 'flex';
-
-    // quitar 'active' y ponerlo al pulsado
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-
     document.getElementById('btn-' + seccion).classList.add('active');
-
-
-    // cambio del título h2
-    const h2 = document.getElementById('encabezado-principal');
-
-    switch (seccion) {
-    case'mision':
-        h2.innerText = "¿Quiénes Somos?";
-        break;
-
-    case 'vision':
-        h2.innerText = "Hacia dónde vamos";
-        break;
-
-    case 'valores':
-        h2.innerText = "Lo que nos define";
-    }
 }

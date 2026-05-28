@@ -1,0 +1,490 @@
+/* TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F7F6FC;
+    color: #142B42;
+}
+
+h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    color: #142B42;
+}
+
+h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #142B42;
+}
+
+h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #142B42;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #E2DDF5;
+    margin: 0;
+}
+
+
+/* -- CABECERA -- */
+
+#cabecera {
+    width: 100%;
+    height: 68px;
+    background-color: white;
+    border-bottom: 1px solid #E2DDF5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 52px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+#logo-doa img {
+    width: 45px;
+    height: auto;
+}
+
+#info-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    flex: 1;
+}
+
+#nombre-plataforma {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #142B42;
+    line-height: 1;
+}
+
+#slogan {
+    font-size: 11px;
+    color: #7A8FA3;
+    line-height: 1;
+}
+
+#nav-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#btn-volver {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3D5166;
+}
+
+#btn-volver img {
+    width: 15px;
+    height: 15px;
+}
+
+#btn-volver:hover {
+    background-color: #EDEAFA;
+    color: #5939AE;
+}
+
+#btn-adquirir {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 8px;
+    background-color: #5939AE;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#btn-adquirir img {
+    width: 15px;
+    height: 15px;
+}
+
+#btn-adquirir:hover {
+    background-color: #560183;
+}
+
+/* -- FIN CABECERA -- */
+
+
+/* -- SECCIÓN INICIO -- */
+
+#seccion-inicio {
+    min-height: 85dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 80px 64px 100px;
+    gap: 40px;
+}
+
+#texto-inicio {
+    max-width: 560px;
+}
+
+#subtitulo-inicio {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5939AE;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5939AE;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#doa-color {
+    color: #5939AE;
+}
+
+#descripcion-inicio {
+    font-size: 17px;
+    color: #3D5166;
+    max-width: 520px;
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+
+#lista-caracteristicas {
+    display: flex;
+    gap: 30px;
+}
+
+.caracteristica {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 200px;
+}
+
+.icono-caracteristica {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background-color: #EDEAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-caracteristica img {
+    width: 16px;
+    height: 16px;
+}
+
+.titulo-caracteristica {
+    font-size: 13px;
+    font-weight: 600;
+    color: #142B42;
+    margin-bottom: 3px;
+}
+
+.texto-caracteristica {
+    font-size: 12px;
+    color: #7A8FA3;
+}
+
+#imagen-hero {
+    flex-shrink: 0;
+}
+
+#imagen-hero img {
+    width: 650px;
+    height: auto;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px #EDEAFA;
+}
+
+/* -- FIN SECCIÓN INICIO -- */
+
+
+/* -- SECCIÓN ROLES -- */
+
+#seccion-roles {
+    min-height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 52px 80px;
+}
+
+#seccion-roles h2 {
+    margin-bottom: 8px;
+}
+
+#subtitulo-roles {
+    font-size: 15px;
+    color: #7A8FA3;
+    margin-bottom: 40px;
+}
+
+#contenedor-roles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.tarjeta-rol {
+    background-color: white;
+    border: 1.5px solid #E2DDF5;
+    border-radius: 20px;
+    padding: 28px 26px 24px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.78;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-activa {
+    opacity: 1;
+    border-color: #5939AE;
+    box-shadow: 0 0 0 4px rgba(89, 57, 174, 0.12), 0 16px 40px rgba(89, 57, 174, 0.18);
+
+    position: relative;
+}
+
+.tarjeta-activa:hover {
+    transform: translateY(-4px);
+}
+
+.icono-rol {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.icono-rol img {
+    width: 24px;
+    height: 24px;
+}
+
+.icono-inactivo {
+    background-color: #F7F6FC;
+    border: 1.5px solid #E2DDF5;
+}
+
+.icono-activo {
+    background-color: #5939AE;
+}
+
+.nombre-rol {
+    margin-bottom: 8px;
+}
+
+.descripcion-rol {
+    font-size: 13.5px;
+    color: #7A8FA3;
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 22px;
+}
+
+.btn-rol {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.btn-rol img {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-disponible {
+    background-color: #5939AE;
+    color: white;
+    transition: background-color 0.15s;
+}
+
+.btn-disponible:hover {
+    background-color: #560183;
+}
+
+.btn-no-disponible {
+    background-color: #F7F6FC;
+    color: #7A8FA3;
+    border: 1.5px solid #E2DDF5;
+}
+
+.nota-rol {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 12px;
+    color: #7A8FA3;
+    line-height: 1.4;
+}
+
+.nota-rol img {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.nota-ok {
+    color: #16A34A;
+}
+
+/* -- FIN SECCIÓN ROLES -- */
+
+
+/* -- PIE DE PÁGINA ---- */
+
+#pie-pagina {
+    border-top: 1px solid #E2DDF5;
+    background-color: white;
+}
+
+#contenedor-pie {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 52px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.item-pie {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.icono-pie {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #EDEAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-pie img {
+    width: 16px;
+    height: 16px;
+}
+
+.titulo-pie {
+    font-size: 13px;
+    font-weight: 600;
+    color: #5939AE;
+    margin-bottom: 4px;
+}
+
+.texto-pie {
+    font-size: 12px;
+    color: #7A8FA3;
+    line-height: 1.45;
+}
+
+/* ---- FIN PIE DE PÁGINA -- */
+
+
+/* -- RESPONSIVE -- */
+
+@media (max-width: 900px) {
+
+    #cabecera {
+        padding: 0 20px;
+    }
+
+    #seccion-inicio {
+        flex-direction: column;
+        padding: 48px 20px 40px;
+    }
+
+    #imagen-hero img {
+        width: 100%;
+    }
+
+    #lista-caracteristicas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #seccion-roles {
+        padding: 40px 20px 60px;
+    }
+
+    #contenedor-roles {
+        grid-template-columns: 1fr;
+    }
+
+    #contenedor-pie {
+        grid-template-columns: 1fr;
+        padding: 28px 20px;
+        gap: 24px;
+    }
+}
